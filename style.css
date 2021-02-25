@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{    
+    margin: 0 40px 0 40px;
+}
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+header{
+    height: 100px;
+    background-color: rgb(241, 83, 234);
+}
+nav{
+    height: 300px;
+    background-color:rgb(202, 156, 86);
+    margin: 10px 0 10px 0;
+}
+main{
+    height: 475px;
+    background-color: blue;
+}
+div{
+    background-color: lightskyblue;
+}
+#libero{
+    height: 15%;
+    margin-bottom: 10px;
+}
+.A{
+    width: 20%;
+    display: inline-block;
+    float: left;
+    height: 60%;
+}
+.B{
+    display: inline-block;
+    float: left;
+    margin: 0 2% 0 2%;
+    width: 56%;
+    height: 60%;
+}
