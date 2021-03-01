@@ -3,50 +3,62 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{    
-    margin: 0 40px 0 40px;
-}
-.container::after{
-    content: "";
-    display: table;
-    clear: both;
+body{
+   width: 70%;
+   margin: auto;
 }
 header{
     height: 100px;
     background-color: rgb(241, 83, 234);
 }
-nav{
-    height: 300px;
-    background-color:rgb(202, 156, 86);
-    margin: 10px 0 10px 0;
-}
-main{
-    height: 475px;
-    background-color: blue;
-}
-div{
-    background-color: lightskyblue;
+body > *:not(footer),
+main > section{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #libero{
     height: 15%;
     margin-bottom: 1%;
 }
-.A{
-    width: 20%;
-    display: inline-block;
-    float: left;
-    height: 80%;
-    margin-bottom: 1%;
-}
-.B{
-    display: inline-block;
-    float: left;
-    margin: 0 1% 11% 1%;
-    width: 58%;
-    height: 80%;
-}
 footer{
-    height: 100px;
+    height: 80px;
     background-color: purple;
     margin-top: 10px;
+}
+#main-top{
+    height: 400px;
+    background-color: yellow;
+}
+#main-bot{
+    height: 500px;
+    background-color:blue;
+}
+#main-bot > h1{
+    height: 50px;
+}
+#main-bot > h1,
+#main-bot > div > *{
+    background-color: cornflowerblue;
+}
+#main-bot > div{
+    height: 90%;
+    padding: 10px 0 10px 0;
+}
+#main-bot aside,
+#main-bot article{
+    height: 100%;
+    float: left;
+}
+#main-bot aside{
+    width: 25%;
+}
+#main-bot article{
+    width: calc(50% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
 }
