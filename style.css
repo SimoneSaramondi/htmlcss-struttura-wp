@@ -16,10 +16,6 @@ main > section{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#libero{
-    height: 15%;
-    margin-bottom: 1%;
-}
 footer{
     height: 80px;
     background-color: purple;
@@ -53,11 +49,13 @@ footer{
     width: 25%;
 }
 #main-bot article{
+    /*calc usato in questo modo mi da una larghezza del 50% e toglie 20px al margin*/
     width: calc(50% - 20px);
     margin-left: 10px;
     margin-right: 10px;
 }
-.clearfix:after{
+.clearfix::after{
+    /*::after mi permette di inserire qualcosa dopo,in questo caso, il clearfix*/
     content: "";
     display: table;
     clear: both;
